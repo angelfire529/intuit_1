@@ -1,0 +1,104 @@
+<div ng-controller="contactsCtrl as model" class="contacts" ng-init="model.init()">
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h1>Contacts</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4" ng-repeat="contact in model.contacts">
+                <div class="card">
+                    <div class="icon-container">
+                        <div class="fa fa-paw"></div>
+                    </div>
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Contact</h4>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p><b>Name: </b>{{contact.firstName}} {{contact.lastName}}</p>
+                        </li>
+                        <li class="list-group-item expand" ng-click="model.showDetails($index);">
+                        <a><b>Details: </b></a>
+                        </li>
+                        <li class="list-group-item expand" ng-click="model.showEmContacts($index);"><a><b>Emergency Contacts: </b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pull-right">
+                    <a ui-sref="home">Back to home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <script type="text/ng-template" id="details.html">
+            <div class="modal-header">
+                <h4 class="modal-title text-center">Details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal details-modal">
+                            <div class="form-container">
+                                <div class="form-group col-xs-12 col-md-6">
+                                    <label class="col-xs-12">Phone Numbers</label>
+                                    <ul class="phone-numbers">
+                                        <li ng-repeat="p in items.phone">
+                                            <span><b>{{p.type}}:&nbsp; </b>{{p.number}}</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-group col-xs-12 col-md-6">
+                                    <label class="col-xs-12">Emails</label>
+                                    <ul class="emails">
+                                        <li ng-repeat="e in items.email">
+                                            <p>{{e}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </script>
+    </div>
+
+    <div class="emergency-modal">
+        <script type="text/ng-template" id="emergency-contacts.html">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center">Emergency Contacts</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card-container">
+                                <div class="card" ng-repeat="item in items">                                    
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p><b>Name: </b>{{item.firstName}} {{item.lastName}}</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><b>Phone Number: </b>{{item.phone}}</p>
+                                        </li>
+                                        <li class="list-group-item expand">
+                                            <p><b>Relationship: </b>{{item.relationship}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </script>
+    </div>
+</div>

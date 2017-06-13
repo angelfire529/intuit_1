@@ -1,0 +1,31 @@
+{
+  "name": "intuit_demo",
+  "description": "demo",
+  "main": "index.js",
+  "authors": [
+    "jamie broberg"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "script": {
+    "postinstall": "gulp inject-vendor"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.16.4",
+    "font-awesome": "fontawesome#^4.6.3"
+  },
+  "devDependencies": {
+    "angular-bootstrap": "^2.2.0"
+  }
+}

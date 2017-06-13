@@ -1,0 +1,100 @@
+﻿{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "details": {
+        "phone": [
+          {
+            "type": "home",
+            "number": "858-555-1212" },
+          {
+            "type": "mobile",
+            "number": "858-555-1235" }
+        ],
+        "email": [
+          "test@gmail.com"
+        ]
+      },
+      "emergencyContacts": [
+          {
+            "firstName": "John",
+            "lastName": "Doe",
+            "phone": "858-555-1647",
+            "relationship": "spouse"
+          },
+          {
+            "firstName": "Jake",
+            "lastName": "Doe",
+            "phone": "858-555-23697",
+            "relationship": "brother"
+          }
+        ]
+    },
+    {
+      "id": 2,
+      "firstName": "Jim",
+      "lastName": "Bean",
+      "details": {
+        "phone": [
+          {
+            "type": "home",
+            "number": "858-556-1212" },
+          {
+            "type": "mobile",
+            "number": "858-555-9865" }
+        ],
+        "email": [
+          "rnova@gmail.com"
+        ]
+      },      
+        "emergencyContacts": [
+          {
+            "firstName": "Dave",
+            "lastName": "Dumas",
+            "phone": "858-555-1647",
+            "relationship": "uncle"
+          },
+          {
+            "firstName": "Geneveive",
+            "lastName": "Warren",
+            "phone": "858-555-23697",
+            "relationship": "sister"
+          }
+        ]
+    },
+    {
+      "id": 3,
+      "firstName": "Jcc",
+      "lastName": "Daniels",
+      "details": {
+        "phone": [
+          {
+            "type": "home",
+            "number": "858-555-8963" },
+          {
+            "type": "mobile",
+            "number": "619-525-4458" }
+        ],
+        "email": [
+          "yum@gmail.com"
+        ]
+      },
+      "emergencyContacts": [
+          {
+            "firstName": "Jose",
+            "lastName": "Cuervo",
+            "phone": "858-545-1647",
+            "relationship": "parent"
+          },
+          {
+            "firstName": "Stella",
+            "lastName": "Artoise",
+            "phone": "619-552-2369",
+            "relationship": "parent"
+          }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+﻿.contacts {
+    .header {
+        h1 {
+            //border-bottom-style: solid;
+            color: darkblue;
+            font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+
+            &:after {
+                content: ' ';
+                background-color: slateblue;
+                line-height: 14px;
+                height: 3px;
+                width: 140px;
+                display: inline-block;
+                position: relative;
+                top: 15px;
+                right: 163px;
+            }
+        }
+    }
+
+    .row {
+        margin-top: 15px
+    }
+
+    .card {
+        background-color: white;
+
+        .icon-container {
+            background-color: darkgray;
+            text-align: center;
+            padding: 15px;
+
+            .fa.fa-paw {
+                color: aliceblue;
+                font-size: 40px;
+            }
+        }
+
+        .list-group-item {
+            &.expand {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                color: black;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+
+    a {
+        color: darkblue;
+        font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+
+    }  
+    
+}
+
+.details-modal {
+    label {
+        font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    }
+        ul{
+            padding-left: 15px;
+            margin-top:5px;
+
+            &.phone-numbers{
+                li {
+                    padding: 5px;
+                }
+            }
+            &.emails {
+                li {
+                    padding: 0px;
+                }
+            }
+            li {
+                list-style-type: none;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+    }
+
+.modal-body {
+    .form-container, .card-container{
+        max-height: 380px;
+        overflow: auto;
+    }
+}

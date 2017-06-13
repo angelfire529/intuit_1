@@ -1,0 +1,66 @@
+body {
+  background-color: #e8e8e8; }
+
+.index {
+  background-color: black; }
+  .index .start {
+    color: #fed136;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 22px;
+    float: left;
+    padding: 5px; }
+
+.contacts .header h1 {
+  color: darkblue;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+  .contacts .header h1:after {
+    content: ' ';
+    background-color: slateblue;
+    line-height: 14px;
+    height: 3px;
+    width: 140px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    right: 163px; }
+
+.contacts .row {
+  margin-top: 15px; }
+
+.contacts .card {
+  background-color: white; }
+  .contacts .card .icon-container {
+    background-color: darkgray;
+    text-align: center;
+    padding: 15px; }
+    .contacts .card .icon-container .fa.fa-paw {
+      color: aliceblue;
+      font-size: 40px; }
+  .contacts .card .list-group-item.expand:hover {
+    cursor: pointer; }
+  .contacts .card .list-group-item a {
+    color: black; }
+    .contacts .card .list-group-item a:hover {
+      cursor: pointer; }
+
+.contacts a {
+  color: darkblue;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+
+.details-modal label {
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+
+.details-modal ul {
+  padding-left: 15px;
+  margin-top: 5px; }
+  .details-modal ul.phone-numbers li {
+    padding: 5px; }
+  .details-modal ul.emails li {
+    padding: 0px; }
+  .details-modal ul li {
+    list-style-type: none;
+    border-bottom: 1px solid #e5e5e5; }
+
+.modal-body .form-container, .modal-body .card-container {
+  max-height: 380px;
+  overflow: auto; }
